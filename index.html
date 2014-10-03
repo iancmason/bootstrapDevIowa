@@ -1,0 +1,192 @@
+<!-- Edited by Ian Mason for DevIowa -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/accordion.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div class="page-header text-center">
+      <h1>Bootstrap 101: <small>A code example</small></h1>
+  </div>
+    <br>
+    <div>
+      <table id="table1" class="table table-bordered table table-striped table table-hover table table-condensed">
+          <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              First Name
+            </th>
+            <th>
+              Last Name
+            </th>
+            <th>
+              Username
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              Mark
+            </td>
+            <td>
+              Otto
+            </td>
+            <td>
+              @mdo
+            </td>
+          </tr>
+          <tr>
+            <td>
+              2
+            </td>
+            <td>
+              Jacob
+            </td>
+            <td>
+              Thornton
+            </td>
+            <td>
+              @fat
+            </td>
+          </tr>
+          <tr>
+            <td>
+              3
+            </td>
+            <td>
+              Larry
+            </td>
+            <td>
+              the Bird
+            </td>
+            <td>
+              @twitter
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div>
+      <button id="accordion_expand_all" type="button" class="btn btn-primary">Expand All</button>
+      <button id="accordion_collapse_all" type="button" class="btn btn-primary">Collapse All</button>
+    </div>
+    <br>
+    <div id="accordion" class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a id="collapseOneTitle" data-toggle="collapse" data-parent="#accordion" href="#collapseOneBody">
+            <b>Searching for an Animal Protocol</b>
+          </a>
+        </div>
+        <div id="collapseOneBody" class="panel-collapse collapse">
+          <div class="panel-body">
+          <ul>
+            <li>
+              <b>Protocol # -</b> Enter a complete or partial Animal Protocol number then click on <b>Search.</b>
+            </li>
+            <li>
+              <b>PI/CoPI/Technician - </b>Begin searching for personnel included on Animal Protocol(s) by entering a minimum of 3 characters of the last name.
+              The application will begin to search and then display a list of names that match.
+              Select the personnel you are looking for and click<b> Search</b>
+              to see a list of all Animal Protocol(s) where they are named. To limit the search results, continue to enter more characters,
+              entering the last name, first name. i.e. Doe, John or enter the HAWKID for an exact match.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a id="collapseTwoTitle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoBody">
+            <b>Copy and Start a New Animal Protocol from an Existing Animal Protocol</b>
+          </a>
+        </div>
+        <div id="collapseTwoBody" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul>
+              <li>
+                Perform a search to find the Animal Protocol you would like to copy.
+              </li>
+              <li>
+                Click on the protocol # in the first column to view the Animal Protocol Summary page.
+              </li>
+              <li>
+                On the Animal Protocol Summary page, look in the right hand column for the Copy link.
+              </li>
+              <li>
+                Click on the Copy link to copy this Animal Protocol to a new Animal Protocol form.
+              </li>
+              <li>
+                Note: Copying can only be done by the PI and those authorized by the PI to start a new protocol.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainForm">
+        <form class="form-horizontal">
+            <div class="form-group has-success">
+                <label class="col-xs-2 control-label" for="inputSuccessA">First Name</label>
+                <div class="col-xs-3">
+                    <input type="text" id="inputSuccessA" class="form-control" placeholder="first name">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="form-group has-success">
+                <label class="col-xs-2 control-label" for="inputSuccessB">Last Name</label>
+                <div class="col-xs-3">
+                    <input type="text" id="inputSuccessB" class="form-control" placeholder="last name">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="form-group has-success">
+                <label class="col-xs-2 control-label" for="inputSuccessC">Username</label>
+                <div class="col-xs-3">
+                    <input type="text" id="inputSuccessC" class="form-control" placeholder="username">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="form-group has-success">
+                <label class="col-xs-2 control-label" for="inputWarning">Password</label>
+                <div class="col-xs-3">
+                    <input type="password" id="inputWarning" class="form-control" placeholder="password">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="form-group has-success">
+                <label class="col-xs-2 control-label" for="inputError">Email</label>
+                <div class="col-xs-3">
+                    <input type="email" id="inputError" class="form-control" placeholder="email">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="col-xs-5">
+            <button type="submit" class="btn btn-primary pull-right">Login</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
